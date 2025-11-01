@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import ndk.utils_android1.DateUtils1;
 import ndk.utils_android1.ErrorUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android1.LogUtils1;
 import ndk.utils_android1.NetworkUtils1;
 import ndk.utils_android1.ToastUtils1;
@@ -162,7 +163,7 @@ public class LoadPassBookTask extends AsyncTask<Void, Void, String[]> {
                 }
             } catch (JSONException | ParseException e) {
 
-                ErrorUtils.displayException(currentActivity, e, applicationName);
+                ExceptionUtils1.handleExceptionOnGui(currentActivity, applicationName, e);
             }
         }
     }
@@ -191,7 +192,7 @@ public class LoadPassBookTask extends AsyncTask<Void, Void, String[]> {
 
         } catch (JSONException | ParseException e) {
 
-            ErrorUtils.displayException(currentActivity, e, applicationName);
+            ExceptionUtils1.handleExceptionOnGui(currentActivity, applicationName, e);
         }
     }
 

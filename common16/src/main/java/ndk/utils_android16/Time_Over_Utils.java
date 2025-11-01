@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import ndk.utils_android1.ErrorUtils;
+import ndk.utils_android1.ExceptionUtils1;
 
 /**
  * Created on 24-08-2018 21:22 under VLottery.
@@ -42,8 +43,7 @@ public class Time_Over_Utils {
 
         } catch (JSONException json_exception) {
 
-            ErrorUtils.displayException(activity, json_exception, applicationName);
-
+            ExceptionUtils1.handleExceptionOnGui(activity, applicationName, json_exception);
         }
     }
 

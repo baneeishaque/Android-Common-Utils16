@@ -10,6 +10,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import ndk.utils_android1.ErrorUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android1.LogUtils1;
 
 public class LocationUtils {
@@ -85,7 +86,7 @@ public class LocationUtils {
             }
         } catch (Exception ex) {
 
-            ErrorUtils.displayException(context, ex, applicationTag);
+            ExceptionUtils1.handleExceptionOnGui(context, applicationTag, ex);
             return false;
         }
         try {
@@ -97,7 +98,7 @@ public class LocationUtils {
             }
         } catch (Exception ex) {
 
-            ErrorUtils.displayException(context, ex, applicationTag);
+            ExceptionUtils1.handleExceptionOnGui(context, applicationTag, ex);
             return false;
         }
 
@@ -117,7 +118,7 @@ public class LocationUtils {
 
         } catch (SecurityException ex) {
 
-            ErrorUtils.displayException(context, ex, applicationTag);
+            ExceptionUtils1.handleExceptionOnGui(context, applicationTag, ex);
             return false;
         }
 

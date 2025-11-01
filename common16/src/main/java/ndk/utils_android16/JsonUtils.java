@@ -162,8 +162,7 @@ public class JsonUtils {
 
             } catch (JSONException e) {
 
-                ErrorUtils.displayException(context, e, applicationName);
-
+                ExceptionUtils1.handleExceptionOnGui(context, applicationName, e);
             }
         }
     }
