@@ -123,15 +123,15 @@ public class HttpApiSelectTask extends AsyncTask<Void, Void, String[]> {
     @Override
     protected String[] doInBackground(Void... params) {
 
-        LogUtils1.debug(applicationName, "URL : " + url, context);
+        LogUtils1.debugOnGui(applicationName, "URL : " + url, context);
         return performHttpClientGetTask(url);
     }
 
     @Override
     protected void onPostExecute(final String[] networkActionResponseArray) {
 
-        LogUtils1.debug(applicationName, "Network Action status is " + networkActionResponseArray[0], context);
-        LogUtils1.debug(applicationName, "Network Action response is " + networkActionResponseArray[1], context);
+        LogUtils1.debugOnGui(applicationName, "Network Action status is " + networkActionResponseArray[0], context);
+        LogUtils1.debugOnGui(applicationName, "Network Action response is " + networkActionResponseArray[1], context);
 
         if (progressFlag == 0) {
 
