@@ -223,8 +223,7 @@ public class HttpApiSelectTask extends AsyncTask<Void, Void, String[]> {
 
                 } catch (JSONException e) {
 
-                    ToastUtils1.errorToast(context, applicationName);
-                    LogUtils1.debug(applicationName, "Error : " + ExceptionUtils1.getExceptionDetails(e), context);
+                    ExceptionUtils1.handleExceptionOnGui(context, applicationName, e);
                 }
             }
         }
