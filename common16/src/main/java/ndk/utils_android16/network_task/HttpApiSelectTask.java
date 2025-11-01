@@ -123,7 +123,7 @@ public class HttpApiSelectTask extends AsyncTask<Void, Void, String[]> {
     @Override
     protected String[] doInBackground(Void... params) {
 
-        LogUtils1.debugOnGui(applicationName, "URL : " + url, context);
+        LogUtils1.extendedDebug(applicationName, "URL : " + url, context, false);
         return performHttpClientGetTask(url);
     }
 
