@@ -1,0 +1,477 @@
+# Instincts generated from https://github.com/Baneeishaque/Android-Common-Utils16
+# Generated: 2026-02-25T17:49:55.270Z
+# Version: 2.0
+
+---
+id: Android-Common-Utils16-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 49 chars
+- Based on 200 commits
+
+---
+id: Android-Common-Utils16-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Android-Common-Utils16-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: Android-Common-Utils16-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Android-Common-Utils16-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: 
+
+---
+id: Android-Common-Utils16-workflow-vscode-settings-update
+trigger: "when doing vscode settings update"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Vscode Settings Update
+
+## Action
+
+Follow the vscode-settings-update workflow:
+1. Add terms to cSpell.words array
+2. Update extension recommendations
+3. Configure editor settings
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: .vscode/settings.json, .vscode/extensions.json
+
+---
+id: Android-Common-Utils16-workflow-ci-pipeline-refinement
+trigger: "when doing ci pipeline refinement"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Ci Pipeline Refinement
+
+## Action
+
+Follow the ci-pipeline-refinement workflow:
+1. Modify azure-pipelines-*.yml
+2. Update CI scripts in ci/ directory
+3. Adjust triggers and caching
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~15x per month
+- Files: azure-pipelines-android.yml, azure-pipelines-docker.yml, ci/*.ps1
+
+---
+id: Android-Common-Utils16-workflow-ci-script-enhancement
+trigger: "when doing ci script enhancement"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Ci Script Enhancement
+
+## Action
+
+Follow the ci-script-enhancement workflow:
+1. Modify ci/common.ps1 helper functions
+2. Update ci/setup-mise-java.ps1
+3. Enhance error handling and path resolution
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~10x per month
+- Files: ci/common.ps1, ci/setup-mise-java.ps1, ci/gradle-build.ps1
+
+---
+id: Android-Common-Utils16-workflow-documentation-update
+trigger: "when doing documentation update"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Documentation Update
+
+## Action
+
+Follow the documentation-update workflow:
+1. Update README.md with project info
+2. Enhance ci/README.md with detailed instructions
+3. Add or update documentation sections
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: README.md, ci/README.md
+
+---
+id: Android-Common-Utils16-workflow-utility-refactoring
+trigger: "when doing utility refactoring"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Workflow Utility Refactoring
+
+## Action
+
+Follow the utility-refactoring workflow:
+1. Rename classes following conventions
+2. Update to use lambda expressions
+3. Consolidate similar functionality
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: common16/src/main/java/ndk/utils_android16/*.java
+
+---
+id: android-common-utils16-java-class-naming
+trigger: "When creating a new Java class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Java Class Naming
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Pattern in common16/src/main/java/ndk/utils_android16/*.java
+- AlertDialogUtils class example
+
+---
+id: android-common-utils16-java-method-naming
+trigger: "When creating Java methods or functions"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Java Method Naming
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Consistent pattern across Java files
+- Standard Java conventions observed
+
+---
+id: android-common-utils16-constants-naming
+trigger: "When defining Java constants"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Constants Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- Standard Java pattern in codebase
+- Naming conventions analysis
+
+---
+id: android-common-utils16-conventional-commits
+trigger: "When making a commit"
+confidence: 0.95
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Conventional Commits
+
+## Action
+
+Use conventional commit format with prefixes like 'feat:', 'fix:', 'docs:', 'chore:', 'style:', 'ci:'
+
+## Evidence
+
+- ci: Prevent unnecessary Android pipeline runs
+- chore(deps): update dependency gradle to v9
+- feat(azure-pipelines-android): Add mise caching
+- docs: Add Xshow to settings.json
+- style(azure-pipelines-android.yml): Remove unnecessary whitespace
+
+---
+id: android-common-utils16-commit-length
+trigger: "When writing commit messages"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Commit Length
+
+## Action
+
+Keep commit messages around 49 characters average length
+
+## Evidence
+
+- Average commit length analysis shows 49 characters
+- Consistent short, descriptive commits
+
+---
+id: android-common-utils16-vscode-spell-check
+trigger: "When adding new technical terms or tools to the project"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Vscode Spell Check
+
+## Action
+
+Add terms to cSpell.words array in .vscode/settings.json
+
+## Evidence
+
+- docs: Add custom words to cSpell in settings.json
+- docs: Add Xshow to settings.json
+- High frequency pattern (8/month)
+
+---
+id: android-common-utils16-azure-pipeline-caching
+trigger: "When optimizing CI/CD pipeline performance"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Azure Pipeline Caching
+
+## Action
+
+Add or update caching mechanisms in azure-pipelines-*.yml files
+
+## Evidence
+
+- feat(azure-pipelines-android): Add mise caching
+- ci: Prevent unnecessary Android pipeline runs
+- Frequent pipeline refinement pattern (15/month)
+
+---
+id: android-common-utils16-powershell-ci-scripts
+trigger: "When improving build reliability or cross-platform support"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Powershell Ci Scripts
+
+## Action
+
+Update PowerShell scripts in ci/ directory with enhanced error handling
+
+## Evidence
+
+- ci/common.ps1, ci/setup-mise-java.ps1 modifications
+- Cross-platform compatibility focus
+- Frequent CI script updates (10/month)
+
+---
+id: android-common-utils16-utility-modernization
+trigger: "When refactoring Java utility classes"
+confidence: 0.82
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Utility Modernization
+
+## Action
+
+Use lambda expressions and consolidate similar functionality
+
+## Evidence
+
+- Refactors and modernizes alert dialog utilities
+- Consolidates JSON exception handling
+- Modern Java practices adoption
+
+---
+id: android-common-utils16-readme-documentation
+trigger: "When improving project onboarding or documenting processes"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Readme Documentation
+
+## Action
+
+Update both main README.md and ci/README.md with detailed instructions
+
+## Evidence
+
+- Documentation update workflow pattern
+- Focus on CI process documentation
+- Regular documentation maintenance (6/month)
+
+---
+id: android-common-utils16-gradle-dependency-updates
+trigger: "When updating project dependencies"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Gradle Dependency Updates
+
+## Action
+
+Use conventional commit format 'chore(deps):' for dependency updates
+
+## Evidence
+
+- chore(deps): update dependency gradle to v9
+- Consistent dependency update commit pattern
+
+---
+id: android-common-utils16-single-package-structure
+trigger: "When organizing code files"
+confidence: 0.85
+domain: architecture
+source: repo-analysis
+source_repo: Baneeishaque/Android-Common-Utils16
+---
+
+# Android Common Utils16 Single Package Structure
+
+## Action
+
+Maintain single-package structure with common16 as main folder
+
+## Evidence
+
+- common16/ folder structure
+- Single-package organization pattern
+- Consistent folder layout
+
